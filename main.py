@@ -1,5 +1,5 @@
 import random
-
+import logo_art
 EASY_LEVEL_ATTEMPT = 10
 HARD_LEVEL_ATTEMPT = 5
 
@@ -26,6 +26,7 @@ def check_answer(choosed_number, computer_guess, attempts,):
 
 
 def game():
+    print(logo_art.logo)
     print("Let me think of a Number between 1 to 50 🤔")
 
     computer_guess = random.randint(1, 50)
